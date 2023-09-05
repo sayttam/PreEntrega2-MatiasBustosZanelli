@@ -6,6 +6,8 @@
 body {
     background-image: url(../img/background.jpg);
     font-family: 'Courier New', Courier, monospace;
+    height: auto;
+    width: auto;
 }
 
 .separador {
@@ -63,8 +65,8 @@ header li {
 header a {
     text-decoration: none;
     color: #24C44C;
-    font-weight: bold;
-    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-family: 'Roboto', sans-serif;
 }
 
 .logoNav {
@@ -552,7 +554,7 @@ header a {
     width: 30%;
     position: relative;
     left: 30%;
-    height: 20px;
+    height: 40px;
     background-color: black;
     color: #24C44C;
 }
@@ -564,7 +566,7 @@ header a {
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    height: 25px;
+    height: 45px;
     width: 100px;
     color: #24C44C;
     transition: 300ms;
@@ -592,13 +594,14 @@ header a {
 }
 
 .estadistica h2 {
-    padding-top: 5px;
+    padding-top: 20px;
     padding-bottom: 10px;
     height: 80px;
+    font-weight: bold;
 }
 
 .estadistica p {
-    font-weight: bolder;
+    font-weight: bold;
     background-color: wheat;
     font-size: 20px;
 }
@@ -634,8 +637,6 @@ header a {
     background: rgb(255, 255, 255);
     background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgb(7, 13, 128) 100%);
 }
-
-
 
 
 
@@ -772,7 +773,17 @@ aside {
     width: 100px;
 }
 
+.calendario {
+    display: block;
+    position: relative;
+    padding: 100px;
+}
 
+.calendario iframe {
+    height: 2000px;
+    width: 100%;
+    background-color: wheat;
+}
 
 
 /* tareas.html */
@@ -826,8 +837,11 @@ aside {
 
 /* Responsive */
 
-@media (max-width:550px) {
+@media (max-width:576px) {
 
+    .estadistica h2 {
+        font-size: 17px;
+    }
 
     .estadistica {
         font-size: x-small;
@@ -851,19 +865,137 @@ aside {
         padding-right: 3px;
     }
 
-    .graficoGlobal {
-        width: 300px;
-        left: 15%;
+    .buscarProyecto input {
+        width: 60%;
+        left: 1%;
+        height: 30px;
     }
 
-    .graficoGlobal img {
-        height: 300px;
-        width: 300px;
+    .buscarProyecto button {
+        left: 1%;
+        height: 32px;
     }
+
 }
 
-@media (max-width:700px) {
+@media (min-width: 577px) and (max-width:768px) {
     .estadistica h2 {
-        font-size: 17px;
+        font-size: 23px;
     }
+
+    header a {
+        font-size: small;
+    }
+
+    header li {
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+
+    .separador {
+        height: 150px;
+    }
+
+    .cajaRecientes {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    
+    .buscarProyecto input {
+        width: 60%;
+        left: 1%;
+        height: 30px;
+    }
+
+    .buscarProyecto button {
+        left: 1%;
+        height: 32px;
+    }
+
+
+}
+
+@media (min-width: 769px) and (max-width:992px) {
+    .estadistica h2 {
+        font-size: 25px;
+    }
+
+    header a {
+        font-size: medium;
+    }
+
+    header li {
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+
+    .separador {
+        height: 150px;
+    }
+
+    .cajaRecientes {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+    .buscarProyecto input {
+        left: 20%;
+        width: 50%;
+    }
+
+    .buscarProyecto button {
+        left: 20%;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width:1200px) {
+    .estadistica h2 {
+        font-size: 25px;
+    }
+
+    header a {
+        font-size: medium;
+    }
+
+    header li {
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+
+    .separador {
+        height: 150px;
+    }
+
+    .cajaRecientes {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
+}
+
+@media (min-width: 1201px) and (max-width:1400px) {
+    .estadistica h2 {
+        font-size: 25px;
+    }
+
+    header a {
+        font-size: medium;
+    }
+
+    header li {
+        padding-right: 0px;
+        padding-left: 3px;
+    }
+
+    .separador {
+        height: 150px;
+    }
+
+    .cajaRecientes {
+        padding-left: 3px;
+        padding-right: 3px;
+    }
+
 }
