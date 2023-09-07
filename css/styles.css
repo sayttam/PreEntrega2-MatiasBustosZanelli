@@ -107,7 +107,7 @@ header {
 
 header img {
     width: 100%;
-    height: 200px;
+    height: 350px;
     opacity: 90%;
 }
 
@@ -154,6 +154,7 @@ header a {
     left: 0;
     background: #000000;
     overflow: hidden;
+    opacity: 90%;
 }
 
 .background span {
@@ -806,24 +807,6 @@ aside {
     margin: 20px 15px;
 }
 
-.graficoGlobal {
-    width: 68rem;
-    position: relative;
-    top: 70px;
-}
-
-.graficoGlobal img {
-    height: 500px;
-}
-
-.graficoGlobal div {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: rgba(245, 222, 179, 0.584);
-    position: relative;
-    left: 60%;
-}
-
 .tarjetasPadre {
     width: fit-content;
     margin: auto;
@@ -945,6 +928,11 @@ aside {
         height: 32px;
     }
 
+ 
+    header img {
+        height: 150px;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width:768px) {
@@ -982,6 +970,11 @@ aside {
         height: 32px;
     }
 
+    
+    header img {
+        height: 200px;
+    }
+
 
 }
 
@@ -1017,6 +1010,10 @@ aside {
         left: 20%;
     }
 
+    header img {
+        height: 250px;
+    }
+
 }
 
 @media (min-width: 992px) and (max-width:1200px) {
@@ -1046,6 +1043,15 @@ aside {
         margin-left: 10px;
     }
 
+    .buscarProyecto input {
+        width: 55%;
+        height: 44px;
+        left: 17%
+    }
+
+    .buscarProyecto button {
+        left: 17%;
+    }
 }
 
 @media (min-width: 1201px) and (max-width:1400px) {
@@ -1073,5 +1079,29 @@ aside {
 
     nav a {
         margin-left: 20px;
+    }
+
+    
+    .buscarProyecto input {
+        width: 55%;
+        height: 44px;
+        left: 17%
+    }
+
+    .buscarProyecto button {
+        left: 17%;
+    }
+}
+
+@media (min-width: 1401px) {
+        
+    .buscarProyecto input {
+        width: 900px;
+        height: 44px;
+        left: 20%
+    }
+
+    .buscarProyecto button {
+        left: 20%;
     }
 }
