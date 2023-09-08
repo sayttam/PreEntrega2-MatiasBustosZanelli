@@ -838,11 +838,9 @@ aside {
 
 
 
+
 /* tareas.html */
 
-/* .tareasRojo img {
-    height: 50px;
-} */
 
 .intro img {
     height: 50px;
@@ -948,8 +946,12 @@ aside {
     }
 
     .calendario {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .tarjetasPadre {
+        padding-left: 30px;
     }
 
     
@@ -960,9 +962,8 @@ aside {
     }
 
     .carouselTareas {
-        padding: 50px;
+        padding: 20px;
     }
-
 
 }
 
@@ -1140,6 +1141,7 @@ aside {
     .buscarProyecto button {
         left: 17%;
     }
+
 }
 
 @media (min-width: 1401px) {
