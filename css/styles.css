@@ -959,6 +959,11 @@ aside {
         font-size: 10px;
     }
 
+    .carouselTareas {
+        padding: 50px;
+    }
+
+
 }
 
 @media (min-width: 577px) and (max-width:768px) {
@@ -1004,6 +1009,10 @@ aside {
     .tarjetasPadre article {
         height: 50%;
         width: 50%;
+    }
+
+    .carouselTareas {
+        padding: 50px;
     }
 
 }
