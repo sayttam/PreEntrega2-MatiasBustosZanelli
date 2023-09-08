@@ -4,7 +4,7 @@
 }
 
 main {
-    margin-bottom: 150px;
+    margin-bottom: 80px;
 }
 
 body {
@@ -637,7 +637,7 @@ header a {
     height: 45px;
     width: 100px;
     color: #24C44C;
-    transition: 300ms;
+    transition: 400ms;
 }
 
 .buscarProyecto button:hover {
@@ -814,6 +814,7 @@ aside {
 .tarjetasPadre {
     width: fit-content;
     margin: auto;
+    padding: auto;
 }
 
 .tarjetasPadre img {
@@ -863,6 +864,13 @@ aside {
     padding: 150px;
 }
 
+.carouselTareas p, h5 {
+    text-shadow: 2px 2px black;
+}
+
+.mainTareas a {
+    color: white;
+}
 
 
 
@@ -1012,6 +1020,11 @@ aside {
         width: 50%;
     }
 
+    .calendario {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .carouselTareas {
         padding: 50px;
     }
@@ -1057,6 +1070,11 @@ aside {
     .tarjetasPadre {
 
         margin-left: 5%;
+    }
+
+    .calendario {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
 }
