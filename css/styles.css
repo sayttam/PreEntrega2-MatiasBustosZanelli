@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+main {
+    margin-bottom: 150px;
+}
+
 body {
     margin: auto;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -856,6 +860,11 @@ aside {
     height: 50px;
 }
 
+.carouselTareas {
+    margin-top: 70px;
+    padding: 150px;
+}
+
 
 
 
@@ -912,6 +921,11 @@ aside {
         height: 150px;
     }
 
+    .cajaProyectos img {
+        left: 30%;
+        top: 30%;
+    }
+
     .cajaRecientes {
         padding-left: 3px;
         padding-right: 3px;
@@ -931,6 +945,18 @@ aside {
  
     header img {
         height: 150px;
+    }
+
+    .calendario {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    
+    .tarjetasPadre article {
+        height: 100%;
+        width: 100%;
+        font-size: 10px;
     }
 
 }
@@ -975,6 +1001,10 @@ aside {
         height: 200px;
     }
 
+    .tarjetasPadre article {
+        height: 50%;
+        width: 50%;
+    }
 
 }
 
@@ -1012,6 +1042,11 @@ aside {
 
     header img {
         height: 250px;
+    }
+
+    .tarjetasPadre {
+
+        margin-left: 5%;
     }
 
 }
@@ -1052,6 +1087,11 @@ aside {
     .buscarProyecto button {
         left: 17%;
     }
+
+    .tarjetasPadre {
+        margin-left: 7%;
+    }
+
 }
 
 @media (min-width: 1201px) and (max-width:1400px) {
@@ -1104,4 +1144,5 @@ aside {
     .buscarProyecto button {
         left: 20%;
     }
+
 }
