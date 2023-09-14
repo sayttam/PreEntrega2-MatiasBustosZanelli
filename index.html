@@ -16,7 +16,8 @@
 <body>
     <header>
 
-        <nav>
+        <!-- Menu de navegacion para vista de escritorio (mas de 576px) -->
+        <nav class="navEscritorio">
             <div class="background">
                 <span></span>
                 <span></span>
@@ -40,14 +41,55 @@
                 <span></span>
             </div>
             <ul>
-                <li><img src="  img/eProyect.png" alt="eProyect" class="logoNav"></li>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="html/proyectos.html">Proyectos</a></li>
-                <li><a href="html/tareas.html">Tareas</a></li>
-                <li><a href="html/equipo.html">Equipo</a></li>
-                <li><a href="html/informes.html">Informes</a></li>
+                <li><img src="../img/eProyect.png" alt="eProyect" class="logoNav"></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="tareas.html">Tareas</a></li>
+                <li><a href="equipo.html">Equipo</a></li>
+                <li class="dropdown dropNav">
+                    <button class="dropdown-toggle bg-transparent border-0 ps-2 botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Informes
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Reportes</a></li>
+                      <li><a href="#">Supervision</a></li>
+                      <li></li>
+                      <li><a href="#">Acerca de</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+
+        <!-- Menu de navegacion para vista movil (menos de 576px) -->
+
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="tareas.html">Tareas</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li class="dropdown dropNav">
+                        <button class="dropdown-toggle bg-transparent border-0 ps-2 botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Informes
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Reportes</a></li>
+                          <li><a href="#">Supervision</a></li>
+                          <li></li>
+                          <li><a href="#">Acerca de</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-success navMobile">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
 
 
         <section class="panelPrincipal">

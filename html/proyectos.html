@@ -15,7 +15,8 @@
 
 <body>
     <header>
-        <nav>
+        <!-- Menu de navegacion para vista de escritorio (mas de 576px) -->
+        <nav class="navEscritorio">
             <div class="background">
                 <span></span>
                 <span></span>
@@ -44,34 +45,75 @@
                 <li><a href="proyectos.html">Proyectos</a></li>
                 <li><a href="tareas.html">Tareas</a></li>
                 <li><a href="equipo.html">Equipo</a></li>
-                <li><a href="informes.html">Informes</a></li>
+                <li class="dropdown dropNav">
+                    <button class="dropdown-toggle bg-transparent border-0 ps-2 botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Informes
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Reportes</a></li>
+                      <li><a href="#">Supervision</a></li>
+                      <li></li>
+                      <li><a href="#">Acerca de</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+
+        <!-- Menu de navegacion para vista movil (menos de 576px) -->
+
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+            <div class="bg-dark p-4">
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="tareas.html">Tareas</a></li>
+                    <li><a href="equipo.html">Equipo</a></li>
+                    <li class="dropdown dropNav">
+                        <button class="dropdown-toggle bg-transparent border-0 ps-2 botonNav" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Informes
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Reportes</a></li>
+                          <li><a href="#">Supervision</a></li>
+                          <li></li>
+                          <li><a href="#">Acerca de</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-success navMobile">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
 
 
         <section class="panelPrincipal">
             <div class="cajaPanel">
                 <div class="estadistica estProyectos">
-                    <a href="html/proyectos.html">
+                    <a href="proyectos.html">
                         <h2>Proyectos Activos</h2>
                         <p>4</p>
                     </a>
 
                 </div>
                 <div class="estadistica estTareas estTareasVencer">
-                    <a href="html/tareas.html">
+                    <a href="tareas.html">
                         <h2>Tareas a vencer</h2>
                     </a>
                     <p>3</p>
                 </div>
                 <div class="estadistica estTareas">
-                    <a href="html/tareas.html">
+                    <a href="tareas.html">
                         <h2>Tareas Pendientes</h2>
                     </a>
                     <p>35</p>
                 </div>
                 <div class="estadistica estMiembros">
-                    <a href="html/equipo.html">
+                    <a href="equipo.html">
                         <h2>Equipos y Miembros</h2>
                     </a>
                     <p>12</p>
@@ -145,36 +187,77 @@
                 <p>Miembros: Juan, María, Carlos</p>
                 <p>Fecha limite: 30/10/2023</p>
                 <p>Responsable Proyecto: Gerencia de Desarrollo</p>
+                <div class="botonesProyectos">
+                    <button type="button" class="btn">
+                        Abrir
+                    </button>
+                    <button type="button" class="btn">
+                        Finalizar
+                    </button>
+                    <button type="button" class="btn">
+                        Eliminar
+                    </button>
+                </div>
             </article>
             <article class="cajaNegra cajaNegraProyectos">
                 <h3>Proyecto XYZ</h3>
                 <img src="../img/porcentaje.png" alt="Grafico">
                 <p>Tareas pendientes: 10</p>
-                <p>Miembros: Juan, María, Carlos</p>
                 <p>Tareas pendientes: 10</p>
                 <p>Miembros: Juan, María, Carlos</p>
                 <p>Fecha limite: 30/10/2023</p>
                 <p>Responsable Proyecto: Gerencia de Desarrollo</p>
+                <div class="botonesProyectos">
+                    <button type="button" class="btn">
+                        Abrir
+                    </button>
+                    <button type="button" class="btn">
+                        Finalizar
+                    </button>
+                    <button type="button" class="btn">
+                        Eliminar
+                    </button>
+                </div>
             </article>
             <article class="cajaNegra cajaNegraProyectos">
                 <h3>Proyecto ABC</h3>
                 <img src="../img/porcentaje.png" alt="Grafico">
                 <p>Tareas pendientes: 3</p>
-                <p>Miembros: Juan, María, Carlos</p>
                 <p>Tareas finalizadas: 7</p>
                 <p>Miembros: Juan, María, Carlos</p>
                 <p>Fecha limite: 30/10/2023</p>
                 <p>Responsable Proyecto: Gerencia de Desarrollo</p>
+                <div class="botonesProyectos">
+                    <button type="button" class="btn">
+                        Abrir
+                    </button>
+                    <button type="button" class="btn">
+                        Finalizar
+                    </button>
+                    <button type="button" class="btn">
+                        Eliminar
+                    </button>
+                </div>
             </article>
             <article class="cajaNegra cajaNegraProyectos">
                 <h3>Proyecto XYZ</h3>
                 <img src="../img/porcentaje.png" alt="Grafico proyectos">
                 <p>Tareas pendientes: 3</p>
-                <p>Miembros: Juan, María, Carlos</p>
                 <p>Tareas finalizadas: 7</p>
                 <p>Miembros: Juan, María, Carlos</p>
                 <p>Fecha limite: 30/10/2023</p>
                 <p>Responsable Proyecto: Gerencia de Desarrollo</p>
+                <div class="botonesProyectos">
+                    <button type="button" class="btn">
+                        Abrir
+                    </button>
+                    <button type="button" class="btn">
+                        Finalizar
+                    </button>
+                    <button type="button" class="btn">
+                        Eliminar
+                    </button>
+                </div>
             </article>
         </section>
 

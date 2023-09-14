@@ -17,6 +17,10 @@ body {
     background-attachment: fixed;
 }
 
+.navMobile {
+    display: none;
+}
+
 /* animacion body */
 
 @keyframes gradient {
@@ -104,6 +108,27 @@ nav {
     z-index: 99;
 }
 
+.dropNav {
+    margin-left: -10px;
+}
+
+.dropNav ul {
+    background-color: #000000f3;
+    color: #24C44C;
+}
+
+.dropNav a {
+    font-weight: lighter;
+    margin: 0;
+}
+
+.botonNav {
+    color: #24C44C;
+    font-weight: bold;
+    height: fit-content;
+    background-color: #00000000;
+}
+
 header {
     position: relative;
     top: 10%;
@@ -134,7 +159,19 @@ header a {
     color: #24C44C;
     font-weight: bolder;
     font-family: 'Roboto', sans-serif;
+    transition: 400ms;
 }
+
+header button {
+    font-size: medium;
+    transition: 400ms;
+}
+
+header a:hover, button:hover {
+    color: wheat;
+}
+
+
 
 .logoNav {
     height: 30px;
@@ -643,9 +680,12 @@ header a {
 .buscarProyecto button:hover {
     background-image: -webkit-linear-gradient(top, #3d3d3d, rgb(0, 0, 0));
     color: wheat;
+    transform:scale(1.05);
 }
 
-
+.buscarProyecto button:active {
+    transform: scale(0.7);
+}
 
 
 
@@ -801,14 +841,31 @@ aside {
     left: 45%;
 }
 
-.cajaProyectos div {
-    position: relative;
-    bottom: 10%;
-    border: #24C44C 1px solid;
-}
 
 .cajaProyectos p {
     margin: 20px 15px;
+}
+
+.botonesProyectos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.botonesProyectos button {
+    background-color: #24C44C;
+    height: 35px;
+    padding: 1px 20px;
+    margin: 5px 5px;
+    font-weight: bold;
+    transition: 750ms;
+}
+
+.botonesProyectos button:hover {
+    background-color: #2b2b2b;
+    color: #24C44C;
+    transform: scale(1.1);
 }
 
 .tarjetasPadre {
@@ -897,10 +954,20 @@ aside {
     font-size: 20px;
 }
 
+/*******************************************************************************************/
 
 /* Responsive */
 
 @media (max-width: 400px) {
+
+    .navEscritorio {
+        display: none;
+    }
+
+    .navMobile {
+        display: inline-flex;
+    }
+
     .estadistica h2 {
         font-size: 14px;
     }
@@ -927,8 +994,12 @@ aside {
     }
 
     .cajaProyectos img {
-        left: 30%;
+        left: 43%;
         top: 30%;
+    }
+
+    .cajaNegraProyectos {
+        grid-template-columns: 1fr;
     }
 
     .cajaRecientes {
@@ -980,9 +1051,25 @@ aside {
         display: none;
     }
 
+    .botonesProyectos button {
+        height: 25px;
+        width: 60px;
+        padding: 0;
+        margin-top: 35px;
+        font-size: x-small;
+    }
+
 }
 
 @media (min-width: 401px) and (max-width:576px) {
+
+    .navEscritorio {
+        display: none;
+    }
+
+    .navMobile {
+        display: inline-flex;
+    }
 
     .estadistica h2 {
         font-size: 14px;
@@ -1010,7 +1097,7 @@ aside {
     }
 
     .cajaProyectos img {
-        left: 30%;
+        left: 38%;
         top: 30%;
     }
 
@@ -1061,6 +1148,14 @@ aside {
         display: none;
     }
 
+    .botonesProyectos button {
+        height: 25px;
+        width: 60px;
+        padding: 0;
+        margin-top: 35px;
+        font-size: small;
+    }
+
 }
 
 @media (min-width: 577px) and (max-width:768px) {
@@ -1072,9 +1167,17 @@ aside {
         font-size: small;
     }
 
+    header button {
+        font-size: small;
+    }
+
     header li {
         padding-right: 0px;
         padding-left: 3px;
+    }
+
+    header img {
+        height: 200px;
     }
 
     .separador {
@@ -1084,6 +1187,10 @@ aside {
     .cajaRecientes {
         padding-left: 3px;
         padding-right: 3px;
+    }
+
+    .cajaNegraProyectos img {
+        left: 40%;
     }
 
     
@@ -1098,11 +1205,6 @@ aside {
         height: 32px;
     }
 
-    
-    header img {
-        height: 200px;
-    }
-
     .tarjetasPadre {
         margin-left: 40px;
     }
@@ -1110,6 +1212,14 @@ aside {
     .tarjetasPadre article {
         height: 50%;
         width: 50%;
+    }
+
+    .botonesProyectos button {
+        height: 25px;
+        width: 60px;
+        padding: 0;
+        margin-top: 30px;
+        font-size: small;
     }
 
     .calendario {
@@ -1141,6 +1251,10 @@ aside {
         padding-left: 3px;
     }
 
+    header img {
+        height: 250px;
+    }
+
     .separador {
         height: 150px;
     }
@@ -1159,13 +1273,17 @@ aside {
         left: 20%;
     }
 
-    header img {
-        height: 250px;
-    }
-
     .tarjetasPadre {
 
         margin-left: 5%;
+    }
+
+    .botonesProyectos button {
+        height: 25px;
+        width: 60px;
+        padding: 0;
+        margin-top: 25px;
+        font-size: small;
     }
 
     .calendario {
@@ -1198,7 +1316,7 @@ aside {
         padding-right: 3px;
     }
 
-    nav a {
+    nav a, button {
         margin-left: 10px;
     }
 
@@ -1241,7 +1359,7 @@ aside {
         padding-right: 3px;
     }
 
-    nav a {
+    nav a, button {
         margin-left: 20px;
     }
 
@@ -1253,7 +1371,7 @@ aside {
     }
 
     .buscarProyecto button {
-        left: 17%;
+        left: 16%;
     }
 
 }
@@ -1267,7 +1385,11 @@ aside {
     }
 
     .buscarProyecto button {
-        left: 20%;
+        left: 19%;
+    }
+
+    nav a, button {
+        margin-left: 20px;
     }
 
 }
