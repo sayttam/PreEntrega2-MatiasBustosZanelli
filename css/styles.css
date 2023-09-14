@@ -699,6 +699,7 @@ header a:hover, button:hover {
     text-shadow: 1px 2px 1px rgba(44, 44, 44, 0.7);
     display: grid;
     grid-template-columns: 1fr;
+    transition: 500ms;
 }
 
 .estadistica h2 {
@@ -724,6 +725,10 @@ header a:hover, button:hover {
 
 .estadistica a:link {
     color: black;
+}
+
+.estadistica:hover {
+    transform: scale(1.01);
 }
 
 .estProyectos {
